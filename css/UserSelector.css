@@ -1,0 +1,42 @@
+.userSelector{
+    display: flex;
+    align-items: center;
+}
+.userSelector__name{
+    margin-right: 10px;
+}
+/*Tab panel */
+.tabpanel-wrapper {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: rgb(255, 255, 255);
+    width: 80%;
+}
+.tab-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.tab.active {
+    border-bottom: 2px solid #aaa;
+    color: #ccc;
+    font-weight: bold;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
